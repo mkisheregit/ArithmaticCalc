@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="ja" </head>
+
+    <body>
+        <div class="calculator">
+            <h1>calculator</h1>
+            <table>
+                <div class="disp">
+                    <p id="input"></p>
+                    <p id="result"></p>
+                </div>
+                <tr>
+                    <td><button id="modulo" onclick="display( '%' )" value="("> % </button></td>
+                    <td><button id="left-p" onclick="display( '(' )" value="("> ( </button></td>
+                    <td><button id="right-p" onclick="display( ')' )" value=")"> ) </button></td>
+                    <td><button id="clear" onclick="clr()">clear</button></td>
+                </tr>
+                <tr>
+                    <td><button id="num" onclick="display('7')" value="7">7</button></td>
+                    <td><button id="num" onclick="display('8')" value="8">8</button></td>
+                    <td><button id="num" onclick="display('9')" value="9">9</button> <br></td>
+                    <td><button id="divide" onclick="display('/')" value="/"> ÷ </button></td>
+                </tr>
+                <tr>
+                    <td><button id="num" onclick="display('4')" value="4">4</button></td>
+                    <td><button id="num" onclick="display('5')" value="5">5</button></td>
+                    <td><button id="num" onclick="display('6')" value="6">6</button></td>
+                    <td><button id="multi" onclick="display('*') " value="*"> × </button></td>
+                </tr>
+                <tr>
+                    <td><button id="num" onclick="display('1')" value="1">1</button></td>
+                    <td><button id="num" onclick="display('2')" value="2">2</button></td>
+                    <td><button id="num" onclick="display('3')" value="3">3</button></td>
+                    <td><button id="minus" onclick="display('-')" value="-"> - </button></td>
+                </tr>
+                <tr>
+                    <td><button id="num" onclick="display('0')" value="0">0</button></td>
+                    <td><button id="dot" onclick="display('.')" value="."> . </button></td>
+                    <td><button id="show" onclick="solve()"> = </button></td>
+                    <td><button id="plus" onclick="display('+')" value="+"> + </button></td>
+                </tr>
+            </table>
+        </div>
+        <script src="calculator.js"></script>
+    </body>
+
+</html>
